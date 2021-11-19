@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul {
+            display: inline-flex;
+        }
+        li {
+            list-style: none;
+            flex-direction: row;
+            margin-left: 15px;
+        }
+        h1   {color: blue;}
+p    {color: red;}
+
+    </style>
+</head>
+
+
+<body bgcolor="grey">
+<h1 style="font-size:60px;">main</h1>
+<p><a href="mailto:someone@example.com">Send email</a></p>
+
+
+<h1 style="color:black;">Alchemist</h1>
+<p style="color:white;">Santiago is a shepherd from Andalusia who, while resting in a church,
+    dreams about pyramids and treasures. After having his dream interpreted
+    by an old woman, and after learning the concept of “Personal Legends,”
+    he sets out to find those pyramids. Significant stops in his journey
+    include Tangier, where he works for a crystal merchant, and the oasis,
+    where he falls in love with Fatima, a “desert woman,” and meets an alchemist.
+    During his travels, he also gets acquainted with the concept of the
+    “Soul of the World,” which makes all beings partake in the same spiritual
+    essence. This allows him to turn into the wind while facing some captors.
+    Once he finally reaches the pyramids, he learns that the treasure he’d
+    been looking for was by the church where he was resting at the beginning of the novel.</p>
+<a href="path-test"><img src="{% static 'images/alchemist.jpg '  %}"></a>
+<!--<img src="{% static 'images/alchemist.jpg' %}">-->
+<a href="path-testing"><img src="{% static 'images/al.jpg' %}"></a>
+<!--<img src="{% static 'images/al.jpg' %}">-->
+<a href="{% static 'images/alchemist.jpg' %}"><img src="{% static 'images/alchemist.jpg' %}"></a>
+<pre>
+   My Bonnie lies over the ocean.
+
+   My Bonnie lies over the sea.
+
+   My Bonnie lies over the ocean.
+
+   Oh, bring back my Bonnie to me.
+</pre>
+<h1 style="background-color:powderblue;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
+
+
+<!--<img src="alchemist.jpg" alt="">-->
+<form action="">
+
+</form>
+
+
+
+<ul>
+    <li><a href="home">Home</a></li>
+    <li><a href="about">About</a></li>
+    <li><a href="contact">Contact</a></li>
+</ul>
+<!--<div>-->
+<!--    <h1>This is Home</h1>-->
+<!--</div>-->
+<h2 style="color:white;">want to buy??</h2>
+<h1 style="text-align:center;">Center</h1>
+
+<p style="color:white;">Then fill these</p>
+        <form action="home" method="post" >
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="name"><br>
+        <input type="text" name="address" placeholder="address"><br>
+        <input type="text" name="phn" placeholder="phnonenumber"><br>
+        <input type="text" name="email" placeholder="email"><br>
+        <input type="submit">
+
+<button type="submit">btn</button>
+    <select name="book">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+    <input type="button" onclick="alert('do you want this!')" value="Click Me!">
+    <input type="button" onclick="confirm('this may damage your system!')" value="Click Me!">
+<input type="radio">
+<input type="checkbox">
+<input type="datetime-local" onclick="button">
+<button type="submit">btn</button>
+<input type="url">
+<input type="date">
+            <p>My favorite color is <del>blue</del> </p>
+            <h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+
+
+<script src="{% static 'js/home.js' %}"></script>
+
+</body>
+</html>
